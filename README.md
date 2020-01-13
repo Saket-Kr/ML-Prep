@@ -52,3 +52,103 @@ Examples of high-variance machine learning algorithms: Decision Trees, k-Nearest
 Read about PCA - https://towardsdatascience.com/understanding-pca-fae3e243731d
 Read about Neural Networks/Backpropagation - https://towardsdatascience.com/understanding-neural-networks-19020b758230
 Read about Binomial Distribution - https://towardsdatascience.com/fun-with-the-binomial-distribution-96a5ecabf65b
+
+Decompose time series into components, trend, seasonal, residual.
+
+Statsmodels.tsa.seasonal.seasonal_decompose
+
+Time series needs to be stationary. We can make nearly any time series stationary by:
+Differencing the series
+Take log
+Take nth root
+Or combination of above
+
+Most common is Differencing which is subtracting next value by current value. If series isn't stationary yet, do second differencing.
+
+Making a series is important because it easy to forecast and is more reliable. Autoregressive forecasting models are essentially linear regression models.
+
+Linear regression works best if predicators, X vars, are not correlated against each other. Stationarizing series solves this problem.
+
+White noise and stationary series. 
+
+Detrend a time series:
+
+ Subtract the line of best fit from the time series. The line of best fit may be obtained from a linear regression model with the time steps as the predictor. For more complex trends, you may want to use quadratic terms (x^2) in the model.
+ Subtract the trend component obtained from time series decomposition we saw earlier.
+
+ Subtract the mean
+
+ Apply a filter like Baxter-King filter(statsmodels.tsa.filters.bkfilter) or the Hodrick-Prescott Filter (statsmodels.tsa.filters.hpfilter) to remove the moving average trend lines or the cyclical components.
+
+deseasonalize a time series:
+
+Take a moving average with length as the seasonal window. This will smoothen in series in the process.
+Seasonal difference the series (subtract the value of previous season from the current value)
+Divide the series by the seasonal index obtained from STL decomposition
+If dividing by the seasonal index does not work well, try taking a log of the series and then do the deseasonalizing. You can later restore to the original scale by taking an exponential.
+
+treat missing values in a time series
+
+Backward Fill
+Linear Interpolation
+Quadratic interpolation
+Mean of nearest neighbors
+Mean of seasonal couterparts
+
+If you have explanatory variables use a prediction model like the random forest or k-Nearest Neighbors to predict it.
+If you have enough past observations, forecast the missing values.
+If you have enough future observations, backcast the missing values
+Forecast of counterparts from previous cycles.
+
+
+estimate the forecastability of a time series
+
+The more regular and repeatable patterns a time series has, the easier it is to forecast. The ‘Approximate Entropy’ can be used to quantify the regularity and unpredictability of fluctuations in a time series.
+
+The higher the approximate entropy, the more difficult it is to forecast it.
+
+Another better alternate is the ‘Sample Entropy’.
+
+Sample Entropy is similar to approximate entropy but is more consistent in estimating the complexity even for smaller time series. For example, a random time series with fewer data points can have a lower ‘approximate entropy’ than a more ‘regular’ time series, whereas, a longer random time series will have a higher ‘approximate entropy’.
+
+Why and How to smoothen a time series
+
+Smoothening of a time series may be useful in:
+
+Reducing the effect of noise in a signal get a fair approximation of the noise-filtered series.
+The smoothed version of series can be used as a feature to explain the original series itself.
+Visualize the underlying trend better
+So how to smoothen a series? Let’s discuss the following methods:
+
+Take a moving average
+Do a LOESS smoothing (Localized Regression)
+Do a LOWESS smoothing (Locally Weighted Regression)
+
+https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/
+
+https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+
+logistic/ linear = slope/intercept
+sum of squares of regression
+svm. - parameters (epsilon, cost, gamma)
+random forst - entropy, information gain
+naive bayes - bayes theorem formula - application 
+box plot - inter-quartile range - 
+bias/variance - corrections.
+variance - regularisation - L1, L2 - advantage/cons - ridge regression, lasso regression
+lstm - forward/back propagation
+bi-directional rnn
+gru - 
+precision/recall - roc/area under - when to choose roc/recall/precision - not do precision when data is imbalanced, recall when less data available class's is req.(credit fraud/cancer detection) / F1 score
+roc - bank defaulters - check the threshold value for classifiation, with different threshold values, accuracy changes
+gradient descent - formmulas 
+when to use different algos.
+Random forrest when features are too much
+Naive bayes - features are indep, overfitting avoid
+Linear - features are 1000s, overfitting avoid, less computation needed
+Unsupervision - anomaly detection, k means, isolation forrest
+Feature engg
+PCA - 
+Ensemble boosting 
+Random sampling with replacement
+
