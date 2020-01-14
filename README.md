@@ -26,71 +26,63 @@ https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learn
 # Boosting algorithms - They play a crucial role in dealing with bias variance trade-off. The selection of sample is made more intelligently. We subsequently give more and more weight to hard to classify observations.
 https://www.analyticsvidhya.com/blog/2015/09/complete-guide-boosting-methods/
 
-# Bagging algorithms - Only controls for high variance in a model. It is an approach where you take random samples of data, build learning algorithms and take simple means to find bagging probabilities.
+# Bagging algorithms
+Only controls for high variance in a model. It is an approach where you take random samples of data, build learning algorithms and take simple means to find bagging probabilities.
 
-Machine Learning mostly have to deal with two Trade-offs,
+# Machine Learning mostly have to deal with two Trade-offs,
 1) Bias-Variance Trade-offs
 2) Precision-Recall Trade-offs
 
-Bias - Leads to a high error on training and test data.
-Low Bias -- Predicted data points are close to the target. Also, the model suggests less assumptions about the form of the target function.
-High-Bias -- Predicted data points are far from the target. Also, the model suggests more assumptions about the form of the target function.
+# Bias
+Leads to a high error on training and test data. Low Bias, when predicted data points are close to the target. Also, the model suggests less assumptions about the form of the target function. High-Bias, when predicted data points are far from the target. Also, the model suggests more assumptions about the form of the target function.
 Low-bias ML algos -- Decision Trees, k-Nearest Neighbors and Support Vector Machines.
 High-bias ML algos -- Linear Regression, Linear Discriminant Analysis and Logistic Regression.
 
-Read about Random Forrest - https://towardsdatascience.com/understanding-random-forest-58381e0602d2
-
-Variance - Performs well on training data but has high error rates on test data.
-Low Variance: Data points are close to each as a result close to function. Also, the model Suggests small changes to the estimate of the target function with changes to the training 
-High Variance: Data points are spread and as a result far from the function. Suggests large changes to the estimate of the target function with changes to the training 
+# Variance 
+Performs well on training data but has high error rates on test data. Low Variance: Data points are close to each as a result close to function. Also, the model Suggests small changes to the estimate of the target function with changes to the training. High Variance: Data points are spread and as a result far from the function. Suggests large changes to the estimate of the target function with changes to the training 
 Examples of low-variance machine learning algorithms: Linear Regression, Linear Discriminant Analysis and Logistic 
 Examples of high-variance machine learning algorithms: Decision Trees, k-Nearest Neighbors and Support Vector Machines.
 
-# Parametric or linear machine learning algorithms often have a high bias but a low variance.
-# Non-parametric or non-linear machine learning algorithms often have low bias but high variance.
+# Parametric or linear machine learning algorithms often have a high bias but a low variance. Non-parametric or non-linear machine learning algorithms often have low bias but high variance.
 
 Read about PCA - https://towardsdatascience.com/understanding-pca-fae3e243731d
 Read about Neural Networks/Backpropagation - https://towardsdatascience.com/understanding-neural-networks-19020b758230
 Read about Binomial Distribution - https://towardsdatascience.com/fun-with-the-binomial-distribution-96a5ecabf65b
+Read about Random Forrest - https://towardsdatascience.com/understanding-random-forest-58381e0602d2
 
+# Time Series
 Decompose time series into components, trend, seasonal, residual.
-
 Statsmodels.tsa.seasonal.seasonal_decompose
-
 Time series needs to be stationary. We can make nearly any time series stationary by:
-Differencing the series
-Take log
-Take nth root
-Or combination of above
-
+a) Differencing the series
+b) Take log
+c) e nth root
+d) combination of above
 Most common is Differencing which is subtracting next value by current value. If series isn't stationary yet, do second differencing.
 
-Making a series is important because it easy to forecast and is more reliable. Autoregressive forecasting models are essentially linear regression models.
+Making a series stationary is important because it easy to forecast and is more reliable. Autoregressive forecasting models are essentially linear regression models.
 
 Linear regression works best if predicators, X vars, are not correlated against each other. Stationarizing series solves this problem.
 
 White noise and stationary series. 
 
 Detrend a time series:
+Subtract the line of best fit from the time series. The line of best fit may be obtained from a linear regression model with the time steps as the predictor. For more complex trends, you may want to use quadratic terms (x^2) in the model.
+Subtract the trend component obtained from time series decomposition we saw earlier.
 
- Subtract the line of best fit from the time series. The line of best fit may be obtained from a linear regression model with the time steps as the predictor. For more complex trends, you may want to use quadratic terms (x^2) in the model.
- Subtract the trend component obtained from time series decomposition we saw earlier.
+Subtract the mean
 
- Subtract the mean
+Apply a filter like Baxter-King filter(statsmodels.tsa.filters.bkfilter) or the Hodrick-Prescott Filter (statsmodels.tsa.filters.hpfilter) to remove the moving average trend lines or the cyclical components.
 
- Apply a filter like Baxter-King filter(statsmodels.tsa.filters.bkfilter) or the Hodrick-Prescott Filter (statsmodels.tsa.filters.hpfilter) to remove the moving average trend lines or the cyclical components.
-
-deseasonalize a time series:
-
+Deseasonalize a time series:
 Take a moving average with length as the seasonal window. This will smoothen in series in the process.
 Seasonal difference the series (subtract the value of previous season from the current value)
 Divide the series by the seasonal index obtained from STL decomposition
 If dividing by the seasonal index does not work well, try taking a log of the series and then do the deseasonalizing. You can later restore to the original scale by taking an exponential.
 
 treat missing values in a time series
-
-Backward Fill
-Linear Interpolation
+a) Backward Fill
+b) Linear Interpolation
 Quadratic interpolation
 Mean of nearest neighbors
 Mean of seasonal couterparts
@@ -128,8 +120,10 @@ https://www.machinelearningplus.com/time-series/arima-model-time-series-forecast
 
 https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
 
-logistic/ linear = slope/intercept
-sum of squares of regression
+logistic/ linear = slope/intercept - The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis, say y-axis. For example, a company determines that job performance for employees in a production department can be predicted using the regression model y = 130 + 4.3x, where x is the hours of in-house training they receive (from 0 to 20) and y is their score on a job skills test. The value of the y-intercept (130) indicates the average job skill score for an employee with no training. The value of the slope (4.3) indicates that for each hour of training, the job skill score increases, on average, by 4.3 points.
+
+sum of squares of regression - https://365datascience.com/sum-squares/ 
+
 svm. - parameters (epsilon, cost, gamma)
 random forst - entropy, information gain
 naive bayes - bayes theorem formula - application 
@@ -152,3 +146,4 @@ PCA -
 Ensemble boosting 
 Random sampling with replacement
 
+A parsimonious model is a model that accomplishes a desired level of explanation or prediction with as few predictor variables as possible.
