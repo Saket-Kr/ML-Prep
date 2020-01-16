@@ -120,9 +120,18 @@ https://www.machinelearningplus.com/time-series/arima-model-time-series-forecast
 
 https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
 
-logistic/ linear = slope/intercept - The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis, say y-axis. For example, a company determines that job performance for employees in a production department can be predicted using the regression model y = 130 + 4.3x, where x is the hours of in-house training they receive (from 0 to 20) and y is their score on a job skills test. The value of the y-intercept (130) indicates the average job skill score for an employee with no training. The value of the slope (4.3) indicates that for each hour of training, the job skill score increases, on average, by 4.3 points.
+# Logistic/ Linear Regression (slope/intercept) 
+The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis, say y-axis. For example, a company determines that job performance for employees in a production department can be predicted using the regression model y = 130 + 4.3x, where x is the hours of in-house training they receive (from 0 to 20) and y is their score on a job skills test. The value of the y-intercept (130) indicates the average job skill score for an employee with no training. The value of the slope (4.3) indicates that for each hour of training, the job skill score increases, on average, by 4.3 points.
 
-sum of squares of regression - https://365datascience.com/sum-squares/ 
+# sum of squares of regression 
+https://365datascience.com/sum-squares/ 
+
+# R-squared
+https://365datascience.com/r-squared/
+Zero means our regression line explains none of the variability of the data, 1 would mean our model explains the entire variability of the data. It measures the goodness of fit of our model. The more factors we include in our regression, the higher the R-squared.
+
+# Adjusted R-squared
+Always smaller than the R-squared, as it penalizes excessive use of variables.
 
 svm. - parameters (epsilon, cost, gamma)
 random forst - entropy, information gain
@@ -136,7 +145,7 @@ gru -
 precision/recall - roc/area under - when to choose roc/recall/precision - not do precision when data is imbalanced, recall when less data available class's is req.(credit fraud/cancer detection) / F1 score
 roc - bank defaulters - check the threshold value for classifiation, with different threshold values, accuracy changes
 gradient descent - formmulas 
-when to use different algos.
+  when to use different algos.
 Random forrest when features are too much
 Naive bayes - features are indep, overfitting avoid
 Linear - features are 1000s, overfitting avoid, less computation needed
