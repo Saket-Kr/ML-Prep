@@ -34,23 +34,30 @@ Only controls for high variance in a model. It is an approach where you take ran
 1) Bias-Variance Trade-offs
 2) Precision-Recall Trade-offs
 
-# Bias
+### Bias
 Leads to a high error on training and test data. Low Bias, when predicted data points are close to the target. Also, the model suggests less assumptions about the form of the target function. High-Bias, when predicted data points are far from the target. Also, the model suggests more assumptions about the form of the target function.
 Low-bias ML algos -- Decision Trees, k-Nearest Neighbors and Support Vector Machines.
 High-bias ML algos -- Linear Regression, Linear Discriminant Analysis and Logistic Regression.
 
-# Variance 
+### Variance 
 Performs well on training data but has high error rates on test data. Low Variance: Data points are close to each as a result close to function. Also, the model Suggests small changes to the estimate of the target function with changes to the training. High Variance: Data points are spread and as a result far from the function. Suggests large changes to the estimate of the target function with changes to the training 
-Examples of low-variance machine learning algorithms: Linear Regression, Linear Discriminant Analysis and Logistic 
-Examples of high-variance machine learning algorithms: Decision Trees, k-Nearest Neighbors and Support Vector Machines.
-- Parametric or linear machine learning algorithms often have a high bias but a low variance. Non-parametric or non-linear machine learning algorithms often have low bias but high variance.
+Markup: * Examples of low-variance machine learning algorithms: 
+          *Linear Regression 
+          *Linear Discriminant Analysis
+          *Logistic 
+Markup : * Examples of high-variance machine learning algorithms: 
+           * Decision Trees 
+           * k-Nearest Neighbors 
+           * Support Vector Machines.
+
+Markup : *Parametric or linear machine learning algorithms often have a high bias but a low variance. Non-parametric or non-linear machine learning algorithms often have low bias but high variance.
 
 Read about PCA - https://towardsdatascience.com/understanding-pca-fae3e243731d
 Read about Neural Networks/Backpropagation - https://towardsdatascience.com/understanding-neural-networks-19020b758230
 Read about Binomial Distribution - https://towardsdatascience.com/fun-with-the-binomial-distribution-96a5ecabf65b
 Read about Random Forrest - https://towardsdatascience.com/understanding-random-forest-58381e0602d2
 
-# Time Series
+### Time Series
 Decompose time series into components, trend, seasonal, residual.
 Statsmodels.tsa.seasonal.seasonal_decompose
 Time series needs to be stationary. We can make nearly any time series stationary by:
@@ -120,17 +127,17 @@ https://www.machinelearningplus.com/time-series/arima-model-time-series-forecast
 
 https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
 
-# Logistic/ Linear Regression (slope/intercept) 
+### Logistic/ Linear Regression (slope/intercept) 
 The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis, say y-axis. For example, a company determines that job performance for employees in a production department can be predicted using the regression model y = 130 + 4.3x, where x is the hours of in-house training they receive (from 0 to 20) and y is their score on a job skills test. The value of the y-intercept (130) indicates the average job skill score for an employee with no training. The value of the slope (4.3) indicates that for each hour of training, the job skill score increases, on average, by 4.3 points.
 
-# sum of squares of regression 
+### sum of squares of regression 
 https://365datascience.com/sum-squares/ 
 
-# R-squared
+### R-squared
 https://365datascience.com/r-squared/
 Zero means our regression line explains none of the variability of the data, 1 would mean our model explains the entire variability of the data. It measures the goodness of fit of our model. The more factors we include in our regression, the higher the R-squared.
 
-# Adjusted R-squared
+### Adjusted R-squared
 Always smaller than the R-squared, as it penalizes excessive use of variables.
 
 svm. - parameters (epsilon, cost, gamma)
