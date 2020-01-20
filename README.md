@@ -36,19 +36,25 @@ Only controls for high variance in a model. It is an approach where you take ran
 
 ### Bias
 Leads to a high error on training and test data. Low Bias, when predicted data points are close to the target. Also, the model suggests less assumptions about the form of the target function. High-Bias, when predicted data points are far from the target. Also, the model suggests more assumptions about the form of the target function.
-Low-bias ML algos -- Decision Trees, k-Nearest Neighbors and Support Vector Machines.
-High-bias ML algos -- Linear Regression, Linear Discriminant Analysis and Logistic Regression.
+Low-bias ML algos 
+         - Decision Trees 
+         - k-Nearest Neighbors
+         - Support Vector Machines.
+High-bias ML algos -
+         - Linear Regression 
+         - Linear Discriminant Analysis
+         - Logistic Regression.
 
 ### Variance 
 Performs well on training data but has high error rates on test data. Low Variance: Data points are close to each as a result close to function. Also, the model Suggests small changes to the estimate of the target function with changes to the training. High Variance: Data points are spread and as a result far from the function. Suggests large changes to the estimate of the target function with changes to the training 
-Markup: * Examples of low-variance machine learning algorithms: 
-          *Linear Regression 
-          *Linear Discriminant Analysis
-          *Logistic 
-Markup : * Examples of high-variance machine learning algorithms: 
-           * Decision Trees 
-           * k-Nearest Neighbors 
-           * Support Vector Machines.
+Low-variance algos: 
+ - Linear Regression 
+ - Linear Discriminant Analysis
+ - Logistic 
+High-variance algos: 
+ - Decision Trees 
+ - k-Nearest Neighbors 
+ - Support Vector Machines.
 
 Markup : *Parametric or linear machine learning algorithms often have a high bias but a low variance. Non-parametric or non-linear machine learning algorithms often have low bias but high variance.
 
