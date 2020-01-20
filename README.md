@@ -30,20 +30,20 @@ https://www.analyticsvidhya.com/blog/2015/09/complete-guide-boosting-methods/
 ### Bagging algorithms
 Only controls for high variance in a model. It is an approach where you take random samples of data, build learning algorithms and take simple means to find bagging probabilities.
 
-### Machine Learning mostly have to deal with two Trade-offs,
+### Machine Learning mostly have to deal with two Trade-offs
 1) Bias-Variance Trade-offs
 2) Precision-Recall Trade-offs
 
 ### Bias
 Leads to a high error on training and test data. Low Bias, when predicted data points are close to the target. Also, the model suggests less assumptions about the form of the target function. High-Bias, when predicted data points are far from the target. Also, the model suggests more assumptions about the form of the target function.
-Low-bias ML algos 
-         - Decision Trees 
-         - k-Nearest Neighbors
-         - Support Vector Machines.
-High-bias ML algos -
-         - Linear Regression 
-         - Linear Discriminant Analysis
-         - Logistic Regression.
+Low-bias ML algos: 
+- Decision Trees 
+- k-Nearest Neighbors
+- Support Vector Machines.
+High-bias ML algos:
+- Linear Regression 
+- Linear Discriminant Analysis
+- Logistic Regression.
 
 ### Variance 
 Performs well on training data but has high error rates on test data. Low Variance: Data points are close to each as a result close to function. Also, the model Suggests small changes to the estimate of the target function with changes to the training. High Variance: Data points are spread and as a result far from the function. Suggests large changes to the estimate of the target function with changes to the training 
