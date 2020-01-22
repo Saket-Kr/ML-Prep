@@ -146,8 +146,12 @@ https://www.machinelearningplus.com/time-series/arima-model-time-series-forecast
 
 https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
 
+---------------------------------------------------------------------------------------------------------------------------------
+
 ### Logistic/ Linear Regression (slope/intercept) 
 The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis, say y-axis. For example, a company determines that job performance for employees in a production department can be predicted using the regression model y = 130 + 4.3x, where x is the hours of in-house training they receive (from 0 to 20) and y is their score on a job skills test. The value of the y-intercept (130) indicates the average job skill score for an employee with no training. The value of the slope (4.3) indicates that for each hour of training, the job skill score increases, on average, by 4.3 points.
+
+**Asymptote** - Straight line that continually approaches a given curve but does not meet it at any finite distance. Sigmoid function becomes asymptote to y=1 for positive values of x and becomes asymptote to y=0 for negative values of x.
 
 ### sum of squares of regression 
 https://365datascience.com/sum-squares/ 
@@ -159,9 +163,14 @@ Zero means our regression line explains none of the variability of the data, 1 w
 ### Adjusted R-squared
 Always smaller than the R-squared, as it penalizes excessive use of variables.
 
-svm. - parameters (epsilon, cost, gamma)
+**SVM** - parameters (epsilon, cost, gamma) 
+The points closest to the hyperplane are called as the support vector points and the distance of the vectors from the hyperplane are called the margins. This hyperplane can also be called as *margin maximizing hyperplane*.
+- https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/
+- https://monkeylearn.com/blog/introduction-to-support-vector-machines-svm/
+
 random forst - entropy, information gain
-naive bayes - bayes theorem formula - application 
+**naive bayes - bayes theorem formula - application **
+https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier/#feature-engineering
 box plot - inter-quartile range - 
 bias/variance - corrections.
 variance - regularisation - L1, L2 - advantage/cons - ridge regression, lasso regression
