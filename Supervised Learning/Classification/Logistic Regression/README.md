@@ -1,0 +1,1 @@
+Asymptote - Straight line that continually approaches a given curve but does not meet it at any finite distance. Sigmoid function becomes asymptote to y=1 for positive values of x and becomes asymptote to y=0 for negative values of x.
