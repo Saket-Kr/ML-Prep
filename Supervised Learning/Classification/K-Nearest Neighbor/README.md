@@ -1,4 +1,9 @@
-The KNN algorithm assumes that similar things exist in close proximity(sometimes called distance, proximity, or closeness). Applicable in pattern recognition, data mining and intrusion detection.
+The KNN algorithm assumes that similar things exist in close proximity(sometimes called distance, proximity, or closeness). Applicable in pattern recognition, data mining and intrusion detection. The separating boundary *becomes smoother with increasing value of K*. With K increasing to infinity it finally becomes all class A or all class B depending on the total majority. Error rate at K=1 is always zero for the training sample.
+
+Two properties to define KNN:
+*Lazy learning algorithm* − KNN is a lazy learning algorithm because it does not have a specialized training phase and uses all the data for training while classification.
+
+*Non-parametric learning algorithm* − KNN is also a non-parametric learning algorithm because it doesn’t assume anything about the underlying data.
 
 **Algorithm**
 1. Load the data
@@ -16,5 +21,6 @@ The KNN algorithm assumes that similar things exist in close proximity(sometimes
 - The algorithm is simple and easy to implement.
 - There’s no need to build a model, tune several parameters, or make additional assumptions.
 - The algorithm is versatile. It can be used for classification, regression, and search (as we will see in the next section).
+
 **Disadvantages**
 - The algorithm gets significantly slower as the number of examples and/or predictors/independent variables increase.
