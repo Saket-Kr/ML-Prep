@@ -1,9 +1,11 @@
-The KNN algorithm assumes that similar things exist in close proximity(sometimes called distance, proximity, or closeness). Applicable in pattern recognition, data mining and intrusion detection. The separating boundary *becomes smoother with increasing value of K*. With K increasing to infinity it finally becomes all class A or all class B depending on the total majority. Error rate at K=1 is always zero for the training sample.
+The KNN algorithm assumes that similar things exist in close proximity(sometimes called distance, proximity, or closeness). Applicable in pattern recognition, data mining and intrusion detection. The separating boundary *becomes smoother with increasing value of K*. With K increasing to infinity it finally becomes all class A or all class B depending on the total majority. Error rate at K=1 is always zero for the training sample. Research has also shown that a small amount of neighbors are most flexible fit which will have low bias but high variance and a large number of neighbors will have a smoother decision boundary which means lower variance but higher bias. Generally, for K odd number is chosen when the number of classes is even.
 
 Two properties to define KNN:
-*Lazy learning algorithm* − KNN is a lazy learning algorithm because it does not have a specialized training phase and uses all the data for training while classification.
+*Lazy learning algorithm* − KNN is a lazy learning algorithm because it does not have a specialized training phase and uses all the data for training while classification. Lazy algorithm means it does not need any training data points for model generation. All training data used in the testing phase. This makes training faster and testing phase slower and costlier.
 
 *Non-parametric learning algorithm* − KNN is also a non-parametric learning algorithm because it doesn’t assume anything about the underlying data.
+
+In large dimension Euclidean distance is not useful anymore, hence cosine similarity can be used.
 
 **Algorithm**
 1. Load the data
