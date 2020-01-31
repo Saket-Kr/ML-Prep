@@ -203,3 +203,7 @@ Ensemble boosting
 Random sampling with replacement
 
 A parsimonious model is a model that accomplishes a desired level of explanation or prediction with as few predictor variables as possible.
+
+**idf(w)** = log(total number of documents/number of documents containing word w)
+**tf(w)** = doc.count(w)/total words in doc
+**Tf-idf(w)** = tf(w)*idf(w)
