@@ -181,9 +181,12 @@ lstm - forward/back propagation
 bi-directional rnn
 gru - 
 precision/recall - roc/area under - when to choose roc/recall/precision - not do precision when data is imbalanced, recall when less data available class's is req.(credit fraud/cancer detection) / F1 score
-roc - bank defaulters - check the threshold value for classifiation, with different threshold values, accuracy changes
+
+**ROC** - bank defaulters - check the threshold value for classifiation, with different threshold values, accuracy changes
+ROC is a plot of signal (True Positive Rate) against noise (False Positive Rate). The model performance is determined by looking at the area under the ROC curve (or AUC). The best possible AUC is 1 while the worst is 0.5 (the 45 degrees random line). Any value less than 0.5 means we can simply do the exact opposite of what the model recommends to get the value back above 0.5.
+
 gradient descent - formmulas 
-  when to use different algos.
+when to use different algos.
 Random forrest when features are too much
 **Naive bayes** - features are indep, overfitting avoid
 P(A|B) = P(A ∩ B) / P(B)
