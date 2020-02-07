@@ -3,7 +3,7 @@ K-means generally uses on Euclidean Distance which computes the root of square d
 It is given by <img src="https://render.githubusercontent.com/render/math?math=\sqrt\sum_{k=1}^m%20(X_i_k%20-X_j_k)^2">.  
 Other types of distance that can be used are:  
 - Manhattan Distance - It computes the absolute differences between coordinates of pair of objects, given by
-<img src="https://render.githubusercontent.com/render/math?math=\sqrt\sum_{k=1}^m%20(X_i_k%20-X_j_k)^2">
+<img src="https://render.githubusercontent.com/render/math?math=Dist_{XY}=\sqrt{\sum_{k=1}^m%20(X_{ik}%20-X_{jk})^2}">
 2.3 Chebychev Distance
 Chebychev Distance is also known as maximum value
 distance and is computed as the absolute magnitude of the
