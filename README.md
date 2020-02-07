@@ -200,19 +200,19 @@ Linear - features are 1000s, overfitting avoid, less computation needed
 isolation forest 
 - https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/isolation-forest/isolation-forest.ipynb
 - https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/isolation-forest/interpreting_isolation-forest.ipynb
-Feature engg - https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114
-PCA - 
-Ensemble boosting 
-Random sampling with replacement
+Feature engg - https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114 
+PCA -  
+Ensemble boosting  
+Random sampling with replacement  
 
 A parsimonious model is a model that accomplishes a desired level of explanation or prediction with as few predictor variables as possible.
 
-**idf(w)** = log(total number of documents/number of documents containing word w)
-**tf(w)** = doc.count(w)/total words in doc
-**Tf-idf(w)** = tf(w)*idf(w)
+**idf(w)** = log(total number of documents/number of documents containing word w)  
+**tf(w)** = doc.count(w)/total words in doc  
+**Tf-idf(w)** = tf(w)*idf(w)  
 
-**Confusion Matrix**: (TP + TN) / (TP + TN + FP + FN)
-**Recall** = TP / (TP + FN)
+**Confusion Matrix**: (TP + TN) / (TP + TN + FP + FN)  
+**Recall** = TP / (TP + FN)  
 Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN).
 **Precision** = TP / (TP + FP)
 To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labeled as positive is indeed positive (small number of FP).
@@ -222,4 +222,6 @@ High recall, low precision:This means that most of the positive examples are cor
 Low recall, high precision:This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
 
 **F-measure**: (2 * Recall * Precision) / (Recall + Precision)
-Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall.
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall. 
+ 
+srk h20
