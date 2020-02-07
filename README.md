@@ -171,12 +171,12 @@ The points closest to the hyperplane are called as the support vector points and
 **γ** - Gamma (used only for RBF kernel). Behavior: As the value of ‘ γ’ increases the model gets overfits.
 
 
-random forst - entropy, information gain
 **naive bayes - bayes theorem formula - application**
 https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier/#feature-engineering
 box plot - inter-quartile range - 
 bias/variance - corrections.
-variance - regularisation - L1, L2 - advantage/cons - ridge regression, lasso regression
+variance - regularisation - L1, L2 - advantage/cons
+Ridge regression, lasso regression - https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a
 lstm - forward/back propagation
 bi-directional rnn
 gru - 
@@ -197,8 +197,10 @@ P(A) is called **Prior probability** and P(B) is called **Evidence**.
 The underlying assumption of these classifiers is that all the features used for classification are independent of each other, and hence the name **Naive**.
 
 Linear - features are 1000s, overfitting avoid, less computation needed
-Unsupervision - anomaly detection, k means, isolation forrest
-Feature engg
+isolation forest 
+- https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/isolation-forest/isolation-forest.ipynb
+- https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/isolation-forest/interpreting_isolation-forest.ipynb
+Feature engg - https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114
 PCA - 
 Ensemble boosting 
 Random sampling with replacement
