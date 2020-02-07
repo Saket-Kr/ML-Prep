@@ -1,6 +1,7 @@
 K-Means is an unsupervised ML algo 
 K-means generally uses on Euclidean Distance which computes the root of square difference between co-ordinates of pair of objects.
-It is given by https://render.githubusercontent.com/render/math?math=\sqrt\sum_{k=1}^m%20(X_i_k%20-X_j_k)^2
+It is given by <img src="https://render.githubusercontent.com/render/math?math=\sqrt\sum_{k=1}^m%20(X_i_k%20-X_j_k)^2">
+
 
 2.2 Manhattan Distance
 Manhattan distance computes the absolute differences
