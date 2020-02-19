@@ -14,7 +14,7 @@ Normally in an ARIMA model, we make use of **either the AR term or the MA term**
 
 Statsmodels.tsa.seasonal.seasonal_decompose  
 Time series needs to be stationary because it easy to forecast and is more reliable. Autoregressive forecasting models are essentially linear regression models. Linear regression works best if predicators, X vars, are not correlated against each other. Stationarizing series solves this problem. We can make nearly any time series stationary by:  
-1) Differencing the series  
+1) Differencing the series
 2) Take log  
 3) e nth root  
 4) combination of above  
@@ -39,10 +39,10 @@ If dividing by the seasonal index does not work well, try taking a log of the se
 
 Treat missing values in a time series  
 1) Backward Fill  
-2)) Linear Interpolation  
-3)Quadratic interpolation  
-4)Mean of nearest neighbors  
-5)Mean of seasonal couterparts  
+2) Linear Interpolation  
+3) Quadratic interpolation  
+4) Mean of nearest neighbors  
+5) Mean of seasonal couterparts  
 
 If you have explanatory variables use a prediction model like the random forest or k-Nearest Neighbors to predict it.  
 If you have enough past observations, forecast the missing values.  
@@ -64,7 +64,7 @@ Why and How to **smoothen** a time series:
 **Smoothening** of a time series may be useful in:  
 - Reducing the effect of noise in a signal get a fair approximation of the noise-filtered series.
 - The smoothed version of series can be used as a feature to explain the original series itself.
-- Visualize the underlying trend better
+- Visualize the underlying trend better   
 So how to smoothen a series? Let’s discuss the following methods:
 - Take a moving average
 - Do a LOESS smoothing (Localized Regression)
