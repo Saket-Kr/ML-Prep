@@ -1,0 +1,1 @@
+In normal Vanilla RNNs, gradiants during back propogation start vanishing to a large extent, losing context information when the sentence is really long. Layers that get a small gradient update stop learning. Those are usually the earlier layers. So because these layers don’t learn, RNN’s can forget what it has seen in longer sequences, thus having a short-term memory.
