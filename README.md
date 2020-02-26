@@ -119,15 +119,16 @@ A parsimonious model is a model that accomplishes a desired level of explanation
 
 **Confusion Matrix**: (TP + TN) / (TP + TN + FP + FN)  
 **Recall** = TP / (TP + FN)  
-Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN).
+Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN). Recall is the ability of a classifier to find all positive instances. For each class, it is defined as the ratio of true positives to the sum of true positives and false negatives.  
 **Precision** = TP / (TP + FP)
+Precision is the ability of a classifier not to label an instance positive that is actually negative. For each class, it is defined as the ratio of true positives to the sum of true and false positives.  
 To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labeled as positive is indeed positive (small number of FP).
+ 
+*High recall, low precision*:This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
 
-High recall, low precision:This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
-
-Low recall, high precision:This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
-
+*Low recall, high precision*:This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
+ 
 **F-measure**: (2 * Recall * Precision) / (Recall + Precision)
-Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall. 
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall. The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0.
  
 srk h20
