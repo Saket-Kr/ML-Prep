@@ -1,3 +1,5 @@
+The choice of machine learning algorithm solely depends of the type of data. If you are given a data set which is exhibits linearity, then linear regression would be the best algorithm to use. If you given to work on images, audios, then neural network would help you to build a robust model. If the data comprises of non linear interactions, then a boosting or bagging algorithm should be the choice. If the business requirement is to build a model which can be deployed, then we’ll use regression or a decision tree model (easy to interpret and explain) instead of black box algorithms like SVM, GBM etc. In short, there is no one master algorithm for all situations. We must be scrupulous enough to understand which algorithm to use.
+
 ### ML-Prep
 https://towardsdatascience.com/how-do-we-train-neural-networks-edd985562b73
 
