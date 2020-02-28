@@ -5,5 +5,5 @@ The points closest to the hyperplane are called as the support vector points and
 - http://www-stat.stanford.edu/~tibs/ElemStatLearn/  
 **epsilon** - The value of **ϵ** defines a margin of tolerance where no penalty is given to errors. The larger ϵ is, the larger errors you admit in your solution.   
 **C** - Inverse of the strength of regularization. As the value of ‘c’ increases the model gets overfits. Control SVM's capacity, under/over-fit.   
-**γ** - Gamma (used only for RBF kernel). Behavior: As the value of ‘ γ’ increases the model gets overfits.
-
+**γ** - Gamma (used only for RBF kernel). Behavior: As the value of ‘ γ’ increases the model gets overfits.  
+- In case of linearly separable data, **convex hull** represents the outer boundaries of the two group of data points. Once convex hull is created, we get maximum margin hyperplane (MMH) as a perpendicular bisector between two convex hulls. MMH is the line which attempts to create greatest separation between two groups.
