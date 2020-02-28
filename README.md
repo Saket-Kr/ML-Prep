@@ -75,7 +75,7 @@ https://365datascience.com/r-squared/
 Zero means our regression line explains none of the variability of the data, 1 would mean our model explains the entire variability of the data. It measures the goodness of fit of our model. The more factors we include in our regression, the higher the R-squared.
 
 ### Adjusted R-squared
-Always smaller than the R-squared, as it penalizes excessive use of variables.
+Always smaller than the R-squared, as it penalizes excessive use of variables. *We will consider adjusted R² as opposed to R² to evaluate model fit because R² increases irrespective of improvement in prediction accuracy as we add more variables. But, adjusted R² would only increase if an additional variable improves the accuracy of model, otherwise stays same*.
 
 **naive bayes - bayes theorem formula - application**  
 https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier/#feature-engineering  
