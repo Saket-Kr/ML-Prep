@@ -1,5 +1,5 @@
 K-Means is an unsupervised ML algorithm.
-K-means generally uses on Euclidean Distance which computes the root of square difference between co-ordinates of pair of objects.  
+K-means generally uses on Euclidean Distance which computes the root of square difference between co-ordinates of pair of objects. We don’t use manhattan distance because it calculates distance horizontally or vertically only. It has dimension restrictions. On the other hand, euclidean metric can be used in any space to calculate distance. Since, the data points can be present in any dimension, euclidean distance is a more viable option.   
 It is given by <img src="https://render.githubusercontent.com/render/math?math=\sqrt\sum_{k=1}^m%20(X_i_k%20-X_j_k)^2">.  
 Other types of distance that can be used are:  
 - Manhattan Distance - It computes the absolute differences between coordinates of pair of objects, given by
