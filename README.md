@@ -131,6 +131,19 @@ To get the value of precision we divide the total number of correctly classified
 *Low recall, high precision*:This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
  
 **F-measure**: (2 * Recall * Precision) / (Recall + Precision)
-Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall. The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0.
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall. The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0.  
+
+In the real world, we deal with multi-dimensional data. Thus, data visualization and computation become more challenging with the increase in dimensions. In such a scenario, we might have to reduce the dimensions to analyze and visualize the data easily. We do this by:  
+- Removing irrelevant dimensions
+- Keeping only the most relevant dimensions  
+This is where we use Principal Component Analysis (PCA).  
+Finding a fresh collection of uncorrelated dimensions (orthogonal) and ranking them on the basis of variance are the goals of Principal Component Analysis.  
+The Mechanism of PCA:  
+- Compute the covariance matrix for data objects
+- Compute the Eigen vectors and the Eigen values in a descending order
+- To get the new dimensions, select the initial N Eigen vectors
+- Finally, change the initial n-dimensional data objects into N-dimensions  
+
+
  
 srk h20
