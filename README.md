@@ -133,7 +133,7 @@ To get the value of precision we divide the total number of correctly classified
 **F-measure**: (2 * Recall * Precision) / (Recall + Precision)
 Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more. The F-Measure will always be nearer to the smaller value of Precision or Recall. The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0.  
 
-In the real world, we deal with multi-dimensional data. Thus, data visualization and computation become more challenging with the increase in dimensions. In such a scenario, we might have to reduce the dimensions to analyze and visualize the data easily. We do this by:  
+**Principal Component Analysis (PCA)** - In the real world, we deal with multi-dimensional data. Thus, data visualization and computation become more challenging with the increase in dimensions. In such a scenario, we might have to reduce the dimensions to analyze and visualize the data easily. We do this by:  
 - Removing irrelevant dimensions
 - Keeping only the most relevant dimensions  
 This is where we use Principal Component Analysis (PCA).  
