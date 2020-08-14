@@ -143,7 +143,3 @@ The Mechanism of PCA:
 - Compute the Eigen vectors and the Eigen values in a descending order
 - To get the new dimensions, select the initial N Eigen vectors
 - Finally, change the initial n-dimensional data objects into N-dimensions  
-
-
- 
-srk h20
