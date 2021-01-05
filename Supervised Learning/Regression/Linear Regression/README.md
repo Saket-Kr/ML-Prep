@@ -1,4 +1,18 @@
-Asymptote - Straight line that continually approaches a given curve but does not meet it at any finite distance. Sigmoid function becomes asymptote to y=1 for positive values of x and becomes asymptote to y=0 for negative values of x.
+**Linear Regression**
+
+- Among various regression methods available, Linear regression is one. Here we try to find a function that maps some features or variables to others sufficiently well.
+
+- When implementing linear regression of some dependent variable 𝑦 on the set of independent variables 𝐱 = (𝑥₁, …, 𝑥ᵣ), where 𝑟 is the number of predictors, you assume a linear relationship between 𝑦 and 𝐱: 𝑦 = 𝛽₀ + 𝛽₁𝑥₁ + ⋯ + 𝛽ᵣ𝑥ᵣ + 𝜀. This equation is the regression equation. 𝛽₀, 𝛽₁, …, 𝛽ᵣ are the regression coefficients, and 𝜀 is the random error.
+
+- Linear regression calculates the estimators of the regression coefficients or simply the predicted weights, denoted with 𝑏₀, 𝑏₁, …, 𝑏ᵣ. They define the estimated regression function 𝑓(𝐱) = 𝑏₀ + 𝑏₁𝑥₁ + ⋯ + 𝑏ᵣ𝑥ᵣ.
+
+- The differences 𝑦ᵢ - 𝑓(𝐱ᵢ) for all observations 𝑖 = 1, …, 𝑛, are called the residuals.
+
+- The coefficient of determination, denoted as 𝑅², tells you which amount of variation in 𝑦 can be explained by the dependence on 𝐱 using the particular regression model. Larger 𝑅² indicates a better fit and means that the model can better explain the variation of the output with different inputs.
+
+- The value 𝑅² = 1 corresponds to SSR = 0, that is to the perfect fit since the values of predicted and actual responses fit completely to each other.
+
+- *Asymptote* -> Straight line that continually approaches a given curve but does not meet it at any finite distance. Sigmoid function becomes asymptote to y=1 for positive values of x and becomes asymptote to y=0 for negative values of x.
 
 
 Concept of **slope** and **intercept**:  
