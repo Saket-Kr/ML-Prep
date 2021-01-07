@@ -21,3 +21,5 @@ The estimated regression function has the equation 𝑓(𝑥) = 𝑏₀ + 𝑏�
   - *Intercept*: The value of 𝑏₀, is also called the intercept. It shows the point where the estimated regression line crosses the 𝑦 axis. It is the value of the estimated response 𝑓(𝑥) for 𝑥 = 0. For example, in the equation 𝑓(𝑥) *= 140 + 4.3*𝑥 The value of the y-intercept indicates the average job skill score for an employee with no training. The value of the slope (4.3) indicates that for each hour of training, the job skill score increases, on average, by 4.3 points.
 
   - *Slope*:  The value of 𝑏₁ determines the slope of the estimated regression line. It indicates the steepness of a line and the intercept indicates the location where it intersects an axis, say y-axis. For example, a company determines that job performance for employees in a production department can be predicted using the regression model y = 130 + 4.3x, where x is the hours of in-house training they receive (from 0 to 20) and y is their score on a job skills test.
+
+***The polynomial regression** problem can be solved as a linear problem with the term 𝑥² regarded as an input variable.*
