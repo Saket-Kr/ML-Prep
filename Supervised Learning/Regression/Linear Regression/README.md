@@ -1,5 +1,12 @@
 **Linear Regression**
 
+There are four assumptions associated with a linear regression model:
+
+- Linearity: The relationship between X and the mean of Y is linear.
+- Homoscedasticity: The variance of residual is the same for any value of X.
+- Independence: Observations are independent of each other.
+- Normality: For any fixed value of X, Y is normally distributed.
+
 - Among various regression methods available, Linear regression is one. Here we try to find a function that maps some features or variables to others sufficiently well.
 
 - When implementing linear regression of some dependent variable 𝑦 on the set of independent variables 𝐱 = (𝑥₁, …, 𝑥ᵣ), where 𝑟 is the number of predictors, you assume a linear relationship between 𝑦 and 𝐱: 𝑦 = 𝛽₀ + 𝛽₁𝑥₁ + ⋯ + 𝛽ᵣ𝑥ᵣ + 𝜀. This equation is the regression equation. 𝛽₀, 𝛽₁, …, 𝛽ᵣ are the regression coefficients, and 𝜀 is the random error.
