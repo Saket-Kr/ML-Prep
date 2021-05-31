@@ -26,4 +26,4 @@ CNN has three main types of layers, which are:
 
 
 The loss function used here is the Cross entropy loss function, show below: 
-                        ![Formula for Cross Entropy Loss Function](Deep Learning/CNN/5987647396-thumb-6755.svg)
+                        ![Formula for Cross Entropy Loss Function](/CNN/5987647396-thumb-6755.svg)
