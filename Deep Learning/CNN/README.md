@@ -24,3 +24,6 @@ CNN has three main types of layers, which are:
 
 - __Fully-connected (FC) layer__ - Here, each node in the output layer connects directly to a node in the previous layer. This layer performs the task of classification based on the features extracted through the previous layers and their different filters. While convolutional and pooling layers tend to use ReLu functions, FC layers usually leverage a softmax activation function
 
+
+The loss function used here is the Cross entropy loss function, show below: 
+                        ![Formula for Cross Entropy Loss Function](/assets/images/tux.png)
