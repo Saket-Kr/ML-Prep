@@ -11,7 +11,8 @@ Saving and loading model architectures:
     from keras.models import model_from_json 
     model = model_from_json(json_string)
     
-Saving parameters (weights):
+    
+# Saving parameters (weights):
     from keras.models import load_model 
     model.save('my_model.h5') # creates a HDF5 file 'my_model.h5' 
     
