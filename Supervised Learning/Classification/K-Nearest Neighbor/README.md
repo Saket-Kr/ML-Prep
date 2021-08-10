@@ -1,4 +1,9 @@
-The KNN algorithm assumes that similar things exist in close proximity(sometimes called distance, proximity, or closeness). 
+The KNN algorithm assumes that similar things exist in close proximity(sometimes called distance, proximity, or closeness). The *K* in *KNN* is the number of nearest neighbors that you want to use for deciding which class the new feature belongs to. For a particular value of *K*, that number of nearest neighbors will be selected and the class under which most of those points belong to, will be the class label decided for the new point that we have. 
+
+For deciding the number *K*, we can have a validation set and try out for several values of K (normally from 1 to 19). 
+
+For finding out the least distance, we can use *Euclidean Distance* (Direct distance between two points on the plot) or the *Manhattan Distance* (Distance between two points measured along the axis at right angles.)
+
 - Applicable in pattern recognition, data mining and intrusion detection. 
 - The separating boundary *becomes smoother with increasing value of K*. With K increasing to infinity it finally becomes all class A or all class B depending on the total majority. 
 - Error rate at K=1 is always zero for the training sample. Research has also shown that a small amount of neighbors are most flexible fit which will have low bias but high variance and a large number of neighbors will have a smoother decision boundary which means lower variance but higher bias. 
@@ -20,8 +25,8 @@ Two properties to define KNN:
 1. Load the data
 2. Initialize K to your chosen number of neighbors
 3. For each example in the data
-  - 3.1 Calculate the distance between the query example and the current example from the data.
-  - 3.2 Add the distance and the index of the example to an ordered collection
+  3.1 Calculate the distance between the query example and the current example from the data.
+  3.2 Add the distance and the index of the example to an ordered collection
 4. Sort the ordered collection of distances and indices from smallest to largest (in ascending order) by the distances
 5. Pick the first K entries from the sorted collection
 6. Get the labels of the selected K entries
