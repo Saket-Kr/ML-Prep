@@ -4,7 +4,7 @@ For deciding the number *K*, we can have a validation set and try out for severa
 
 For finding out the least distance, we can use *Euclidean Distance* (Direct distance between two points on the plot) or the *Manhattan Distance* (Distance between two points measured along the axis at right angles.)
 
-![Euclidean and Mnhattan Distance](https://raw.githubusercontent.com/Saket-Kr/ML-Prep/master/Supervised%20Learning/Classification/K-Nearest%20Neighbor/Euclidean%20and%20Mnhattan%20Distance.PNG)
+![Euclidean/Manhattan Distance](https://raw.githubusercontent.com/Saket-Kr/ML-Prep/master/Supervised%20Learning/Classification/K-Nearest%20Neighbor/Euclidean%20Manhattan%20Distance.PNG)
 
 - Applicable in pattern recognition, data mining and intrusion detection. 
 - The separating boundary *becomes smoother with increasing value of K*. With K increasing to infinity it finally becomes all class A or all class B depending on the total majority. 
